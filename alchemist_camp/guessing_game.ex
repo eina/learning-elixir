@@ -1,12 +1,10 @@
 # Guessing Game:
 # guess between a low and a high number
 
-# Alchemist Camp Challenge:
-# 1. make a program that greets a user by name, if they enter your name, it should say something special.
 defmodule GuessingGame do  
   # can make many functiond definitions with the same name
   # guard in case user puts in (high, low) 
-  def guess (a, b) when a > b,  do: guess(b, a)  
+  def guess(a, b) when a > b,  do: guess(b, a)  
 
   def guess(low, high) do
     answer = IO.gets("Hmm... maybe you're thinking of #{mid(low, high)}? \n")
